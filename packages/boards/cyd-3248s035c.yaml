@@ -114,6 +114,14 @@ output:
     id: led_green # Renamed (pins swapped)
     inverted: true
 
+i2c:
+  id: touch_bus
+  sda: GPIO33
+  scl:
+    number: GPIO32
+    ignore_strapping_warning: true
+  scan: true
+
 touchscreen:
   - platform: gt911
     id: ts_touch
