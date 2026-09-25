@@ -71,7 +71,7 @@ esp32:
 light:
 # LCD backlight
   - platform: monochromatic
-    output: backlight_pwm
+    output: gpio_backlight_pwm
     name: "Display Backlight"
     id: backlight
     restore_mode: ALWAYS_ON
@@ -99,7 +99,7 @@ light:
 output:
   - platform: ledc
     pin: GPIO27
-    id: backlight_pwm
+    id: gpio_backlight_pwm
     frequency: ${BACKLIGHT_FREQUENCY}
   - platform: ledc
     pin: GPIO22
