@@ -20,12 +20,13 @@ packages:
   # Every size of the compact look, scaled to DISPLAY_DPI below. This glass is where that look was drawn.
   look: !include ../looks/compact.yaml
   touch: !include ../features/capacitive-touch.yaml
+  camera: !include ../features/camera.yaml
   backlight: !include ../features/backlight.yaml
   self_test: !include ../features/self-test.yaml
 
 substitutions:
   # The key of this board file; the firmware reports it so ESP Screens knows what board a screen is.
-  BOARD_ID: "cyd"
+  BOARD_ID: "cyd-esp32-3248s035c"
   DEVICE_NAME: "cyd-new"
   DEVICE_FRIENDLY_NAME: "My CYD"
 
