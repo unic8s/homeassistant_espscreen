@@ -117,10 +117,7 @@ output:
 i2c:
   id: touch_bus
   sda: GPIO33
-  scl:
-    number: GPIO32
-    ignore_strapping_warning: true
-  scan: true
+  scl: GPIO32
 
 touchscreen:
   - platform: gt911
