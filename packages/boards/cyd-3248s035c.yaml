@@ -130,6 +130,12 @@ output:
     id: led_green # Renamed (pins swapped)
     inverted: true
 
+touchscreen:
+  - platform: gt911
+    id: ts_touch
+    i2c_id: touch_bus
+    display: my_display
+    update_interval: 20ms
 
 # SPI bus for TFT display and touch controller
 spi:
