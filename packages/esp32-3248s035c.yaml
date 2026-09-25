@@ -10,7 +10,7 @@ substitutions:
 
 packages:
   core: !include core.yaml
-  board: !include boards/esp32-3248s035c.yaml
+  board: !include boards/cyd-3248s035c.yaml
 
 external_components:
   - source:

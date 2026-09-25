@@ -29,13 +29,10 @@ cyd:
     DISPLAY_MODEL: [ILI9341, ST7789V]
 
 esp32-3248s035c:
-  file: esp32-3248s035c.yaml
+  file: cyd-3248s035c.yaml
   name: CYD
   model: ESP32-3248S035C
-  status: stable
-  choices:
-    # Some of these boards carry an ST7789V display controller instead of the ILI9341 (GitHub #6).
-    DISPLAY_MODEL: [ST7789V, ILI9341]
+  status: experimental
 
 guition:
   file: guition-4848s040.yaml
