@@ -45,7 +45,7 @@
         "rows": 3,
         "width": 320
     },
-    "checkout/esp32-3248s035c.yaml": {
+    "checkout/cyd-3248s035c.yaml": {
         "alert": {
             "line": 16,
             "title_line": 21
@@ -445,7 +445,7 @@
         "rows": 4,
         "width": 800
     },
-    "esp32-3248s035c": {
+    "cyd-3248s035c": {
         "alert": {
             "line": 16,
             "title_line": 21

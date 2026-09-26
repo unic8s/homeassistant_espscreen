@@ -26,7 +26,7 @@ packages:
 
 substitutions:
   # The key of this board file; the firmware reports it so ESP Screens knows what board a screen is.
-  BOARD_ID: "esp32-3248s035c"
+  BOARD_ID: "cyd-3248s035c"
   DEVICE_NAME: "cyd-new"
   DEVICE_FRIENDLY_NAME: "My CYD"
 
