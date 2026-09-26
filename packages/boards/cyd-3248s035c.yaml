@@ -20,7 +20,7 @@ packages:
   # Every size of the compact look, scaled to DISPLAY_DPI below. This glass is where that look was drawn.
   look: !include ../looks/standard.yaml
   touch: !include ../features/capacitive-touch.yaml
-  #camera: !include ../features/camera.yaml
+  camera: !include ../features/camera.yaml
   backlight: !include ../features/backlight.yaml
   self_test: !include ../features/self-test.yaml
 
