@@ -51,7 +51,7 @@ substitutions:
   GRID_ROWS_PORTRAIT: "4"
   LVGL_BUFFER_SIZE: "12%"                       # LVGL's draw buffer as a share of the screen
 
-  BACKLIGHT_FREQUENCY: "20000Hz"                # the backlight's PWM (see the output block)
+  #BACKLIGHT_FREQUENCY: "20000Hz"                # the backlight's PWM (see the output block)
 
 # ============================================================
 # No need to edit below this line.
