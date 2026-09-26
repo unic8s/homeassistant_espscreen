@@ -446,6 +446,51 @@
         "rows": 4,
         "width": 800
     },
+    "esp32esp32-3248s035c": {
+        "alert": {
+            "line": 16,
+            "title_line": 21
+        },
+        "board": "cyd",
+        "can_standby": true,
+        "catalog": {
+            "calibrate": true,
+            "choices": {
+                "DISPLAY_MODEL": [
+                    "ST7789V"
+                ]
+            },
+            "inch": 2.8,
+            "model": "ESP32-3248S035C",
+            "name": "CYD",
+            "order": 0,
+            "status": "experimental",
+            "touch": "GT911"
+        },
+        "columns": 2,
+        "dimmable": true,
+        "dpi": 165,
+        "height": 320,
+        "look": "compact",
+        "orientations": {
+            "landscape": {
+                "columns": 2,
+                "height": 320,
+                "rotation": 90,
+                "rows": 3,
+                "width": 480
+            },
+            "portrait": {
+                "columns": 1,
+                "height": 480,
+                "rotation": 180,
+                "rows": 4,
+                "width": 320
+            }
+        },
+        "rows": 3,
+        "width": 480
+    },
     "cyd": {
         "alert": {
             "line": 16,
@@ -679,6 +724,51 @@
         },
         "rows": 3,
         "width": 320
+    },
+    "packages/cyd-3248s035c.yaml": {
+        "alert": {
+            "line": 16,
+            "title_line": 21
+        },
+        "board": "cyd",
+        "can_standby": true,
+        "catalog": {
+            "calibrate": true,
+            "choices": {
+                "DISPLAY_MODEL": [
+                    "ST7789V"
+                ]
+            },
+            "inch": 2.8,
+            "model": "ESP32-3248S035C",
+            "name": "CYD",
+            "order": 0,
+            "status": "experimental",
+            "touch": "GT911"
+        },
+        "columns": 2,
+        "dimmable": true,
+        "dpi": 143,
+        "height": 320,
+        "look": "compact",
+        "orientations": {
+            "landscape": {
+                "columns": 2,
+                "height": 320,
+                "rotation": 90,
+                "rows": 3,
+                "width": 480
+            },
+            "portrait": {
+                "columns": 1,
+                "height": 480,
+                "rotation": 180,
+                "rows": 4,
+                "width": 320
+            }
+        },
+        "rows": 3,
+        "width": 480
     },
     "packages/guition.yaml": {
         "alert": {
