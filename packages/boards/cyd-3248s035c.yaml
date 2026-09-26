@@ -18,7 +18,7 @@ packages:
   # The cards of this board's grid, one per cell (tools/generate_cells.py writes them; docs/RESPONSIVE.md).
   cells: !include ../cells/6.yaml
   # Every size of the compact look, scaled to DISPLAY_DPI below. This glass is where that look was drawn.
-  look: !include ../looks/compact.yaml
+  look: !include ../looks/standard.yaml
   touch: !include ../features/capacitive-touch.yaml
   #camera: !include ../features/camera.yaml
   backlight: !include ../features/backlight.yaml
@@ -36,10 +36,11 @@ substitutions:
   PANEL_W: "320"
   PANEL_H: "480"
   DISPLAY_DPI: "165"
+  # The LVGL angle that lays this panel out lying down (320 x 240). Standing up is a quarter further.
+  ROTATION_LANDSCAPE: "90"
   # true on this board (resistive XPT2046) — was false on the 032c board
   # (capacitive GT911). This is the original upstream value for this panel.
   TOUCH_SWAP_XY: "true"
-  TOUCH_MIRROR_X: "true"
   # The tile grid: columns and rows of cells. The shared tree places every cell from these
   # (runtime_tiles::place_page).
   GRID_COLS: "2"
