@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import profiles  # noqa: E402
 
 ROOT = profiles.ROOT
-REPO = 'https://github.com/MaxGramser/homeassistant_espscreen'
+REPO = 'https://github.com/unic8s/homeassistant_espscreen'
 
 
 def components(board):
