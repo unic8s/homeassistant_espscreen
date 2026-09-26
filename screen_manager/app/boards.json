@@ -63,7 +63,7 @@
             "model": "ESP32-3248S035C",
             "name": "CYD",
             "order": 0,
-            "status": "stable",
+            "status": "experimental",
             "touch": "GT911"
         },
         "columns": 2,
