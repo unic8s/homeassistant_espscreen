@@ -56,11 +56,10 @@
             "calibrate": true,
             "choices": {
                 "DISPLAY_MODEL": [
-                    "ST7789V",
-                    "ILI9341"
+                    "ST7789V"
                 ]
             },
-            "inch": 2.8,
+            "inch": 3.5,
             "model": "ESP32-3248S035C",
             "name": "CYD",
             "order": 0,
@@ -460,7 +459,7 @@
                     "ST7789V"
                 ]
             },
-            "inch": 2.8,
+            "inch": 3.5,
             "model": "ESP32-3248S035C",
             "name": "CYD",
             "order": 0,
@@ -739,7 +738,7 @@
                     "ST7789V"
                 ]
             },
-            "inch": 2.8,
+            "inch": 3.5,
             "model": "ESP32-3248S035C",
             "name": "CYD",
             "order": 0,
