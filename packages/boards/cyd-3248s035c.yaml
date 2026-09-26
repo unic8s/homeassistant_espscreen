@@ -108,7 +108,7 @@ output:
   - platform: ledc
     pin: GPIO27
     id: gpio_backlight_pwm
-    frequency: ${BACKLIGHT_FREQUENCY}
+    #frequency: ${BACKLIGHT_FREQUENCY}
   - platform: ledc
     pin: GPIO22
     id: led_red
