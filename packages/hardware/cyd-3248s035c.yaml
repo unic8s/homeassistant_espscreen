@@ -34,21 +34,6 @@ light:
     name: "Display Backlight"
     id: backlight
     restore_mode: ALWAYS_ON
-# onboard rgb led
-  - platform: rgb
-    name: "Front LED"
-    id: front_led
-    restore_mode: ALWAYS_OFF
-    red: led_red
-    green: led_green
-    blue: led_blue
-    effects:
-      - pulse:
-          name: "pulse_red"
-          transition_length: 2s
-          update_interval: 2s
-          min_brightness: 20%
-          max_brightness: 80%
 
 # ============================================================ 
 # Touchscreen Display related setup
@@ -113,30 +98,3 @@ display:
       swap_xy: true
       mirror_y: false
       mirror_x: false
-
-# ============================================================ 
-# Home Assistant Sensors
-# ============================================================
-
-sensor:  
-  # LDR Light Sensor (GPIO34)
-  - platform: adc
-    pin: GPIO34
-    name: "Ambient Light"
-    id: ambient_light
-    update_interval: 5s
-    attenuation: 0db  # 0dB = 0~800mV range (matching the example code)
-    filters:
-      - multiply: 1000  # Convert to millivolts
-      - or:
-        - throttle: 5s  # Only send if changed
-        - delta: 10     # Only send if change > 10mV
-      - lambda: |-
-          // Convert millivolts to percentage (0-100%)
-          // Based on typical LDR behavior: 0-800mV range
-          float min_mv = 50.0;   // Very dark (adjust based on your environment)
-          float max_mv = 700.0;  // Very bright (adjust based on your environment)
-          float percentage = (x - min_mv) / (max_mv - min_mv) * 100.0;
-          return std::max(0.0f, std::min(100.0f, percentage));
-    unit_of_measurement: "%"
-    accuracy_decimals: 0
