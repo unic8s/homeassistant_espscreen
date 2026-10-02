@@ -14,7 +14,7 @@ esp32:
   framework:
     advanced:
       sram1_as_iram: true
-      loop_task_stack_size: 16384
+      #loop_task_stack_size: 16384
   variant: esp32
 
 
