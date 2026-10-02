@@ -89,25 +89,6 @@ light:
 # Touchscreen Display related setup
 # ============================================================
 
-# Set pins to control the backlight and RGB LED
-output:
-  - platform: ledc
-    pin: GPIO27
-    id: gpio_backlight_pwm
-    #frequency: ${BACKLIGHT_FREQUENCY}
-  - platform: ledc
-    pin: GPIO22
-    id: led_red
-    inverted: true
-  - platform: ledc
-    pin: GPIO16  # Was green in original schematic
-    id: led_blue # Renamed (pins swapped)
-    inverted: true
-  - platform: ledc
-    pin: GPIO17  # Was blue in original schematic
-    id: led_green # Renamed (pins swapped)
-    inverted: true
-
 i2c:
   id: touch_bus
   sda: GPIO33
