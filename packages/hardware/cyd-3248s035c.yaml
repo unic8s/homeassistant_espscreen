@@ -10,17 +10,11 @@
 # (docs/BOARD_RELEASES.md). The next shared release moves them, and cyd-2432s028.yaml includes this file then.
 esp32:
   board: esp32dev
-  #minimum_chip_revision: "3.1"
+  minimum_chip_revision: "3.1"
   framework:
     advanced:
-      # ESPHome recommends this itself in the boot log. Yields ~40KB extra IRAM
-      # and a smaller binary, and every KB counts on this board.
       sram1_as_iram: true
-      # minimum_chip_revision deliberately left out: that was here for the
-      # 032c board (rev 3.1 confirmed), but this is a different physical board
-      # with an unknown chip revision. With an unjustifiably high minimum
-      # the firmware simply refuses to boot.
-      #loop_task_stack_size: 16384
+      loop_task_stack_size: 16384
   variant: esp32
 
 
@@ -40,25 +34,6 @@ light:
 # ============================================================ 
 # Touchscreen Display related setup
 # ============================================================
-
-# Set pins to control the backlight and RGB LED
-output:
-  - platform: ledc
-    pin: GPIO27
-    id: gpio_backlight_pwm
-    #frequency: ${BACKLIGHT_FREQUENCY}
-  - platform: ledc
-    pin: GPIO22
-    id: led_red
-    inverted: true
-  - platform: ledc
-    pin: GPIO16  # Was green in original schematic
-    id: led_blue # Renamed (pins swapped)
-    inverted: true
-  - platform: ledc
-    pin: GPIO17  # Was blue in original schematic
-    id: led_green # Renamed (pins swapped)
-    inverted: true
 
 i2c:
   id: touch_bus
