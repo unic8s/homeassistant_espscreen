@@ -24,20 +24,21 @@ esp32:
 
 
 # ============================================================ 
-# Touchscreen Display related setup
+# Home Assistant related setup
 # ============================================================
 
-output:
-  - platform: ledc
-    pin: GPIO27
-    id: gpio_backlight_pwm
-    # ESPHome's ledc default is 1kHz. You don't see that while still (well
-    # above what the eye perceives as flicker), but moving the screen reveals
-    # motion blur turning the on/off pulses into streaks (the same effect as
-    # a PWM LED that "judders" when you move it). 20kHz sits well above the
-    # speed at which motion still makes that visible, and still leaves ample
-    # duty-cycle resolution left over for smooth dimming.
-    frequency: ${BACKLIGHT_FREQUENCY}
+# ==== Lights ====
+light:
+# LCD backlight
+  - platform: monochromatic
+    output: gpio_backlight_pwm
+    name: "Display Backlight"
+    id: backlight
+    restore_mode: ALWAYS_ON
+
+# ============================================================ 
+# Touchscreen Display related setup
+# ============================================================
 
 i2c:
   id: touch_bus
