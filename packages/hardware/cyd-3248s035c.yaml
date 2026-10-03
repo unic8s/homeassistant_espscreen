@@ -11,11 +11,10 @@
 esp32:
   board: esp32dev
   framework:
-    type: esp-idf
-  advanced:
-    sram1_as_iram: true
-    #loop_task_stack_size: 16384
-    minimum_chip_revision: "3.1"
+    advanced:
+      sram1_as_iram: true
+      #loop_task_stack_size: 16384
+      minimum_chip_revision: "3.1"
   variant: esp32
 
 
