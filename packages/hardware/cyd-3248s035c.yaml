@@ -27,11 +27,16 @@ esp32:
 # Home Assistant related setup
 # ============================================================
 
+output:
+  - platform: ledc
+    pin: GPIO27
+    id: gpio_backlight_pwm
+
 # ==== Lights ====
 light:
 # LCD backlight
   - platform: monochromatic
-    output: GPIO27
+    output: gpio_backlight_pwm
     name: "Display Backlight"
     id: backlight
     restore_mode: ALWAYS_ON
